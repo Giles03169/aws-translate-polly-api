@@ -14,46 +14,20 @@ This project demonstrates how to build a serverless translation + speech synthes
 
 ---
 
-## 📁 Project Structure
-
-```
-aws-translate-polly-api/
-│
-├── lambda/
-│   └── lambda_function.py        # Main Lambda function
-│
-├── events/
-│   └── sample-event.json         # Example API Gateway event
-│
-├── screenshots/
-│   └── *.png                     # Upload screenshots here
-│
-└── README.md                     # This file
-```
-
----
 
 ## 📦 Sample Request
 
-```http
-POST /speak
-Content-Type: application/json
-
 {
-  "text": "I love AI.",
+  "text": "AWS now lets me speak in french, love Giles.",
   "language": "fr"
 }
-```
 
 ---
 
 ## ✅ Sample Response
 
 ```json
-{
-  "translated_text": "J'adore l'IA.",
-  "audio_url": "https://translate-polly-giles-2025.s3.eu-west-1.amazonaws.com/xxxx.mp3"
-}
+{"translated_text": "AWS me permet d\u00e9sormais de parler en fran\u00e7ais, j'adore Giles.", "audio_url": "https://translate-polly-giles-2025.s3.eu-west-1.amazonaws.com/d2323052-9a74-4700-9e3e-3f6fe2b708ee.mp3"}
 ```
 
 ---
@@ -66,12 +40,10 @@ Content-Type: application/json
 
 ---
 
-## 🖼️ Screenshots
 
-_Add screenshots of your Lambda config, S3 setup, and API Gateway route here._
 
 ---
 
 ## 👨‍💻 Author
 
-Giles Woodford — AWS Serverless Portfolio Project
+Giles 
